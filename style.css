@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.hero {
+  background: #b11226;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-img-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: #fff;
+  color: #b11226;
+}
+
+.buy-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buy-btn {
+  background: #b11226;
+  color: #fff;
+}
+
+.block {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-main-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.faq details {
+  margin-bottom: 12px;
+}
+
+.docs {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.doc-btn {
+  background: #eee;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #222;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  background: #fff;
+  width: 90%;
+  max-width: 360px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background: none;
+  font-size: 18px;
+}
