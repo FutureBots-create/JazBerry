@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jazberry Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo-wrapper">
+                <img src="club.jpg" alt="Logo" class="logo-img">
+            </div>
+            <h1 class="brand-name">Jazberry</h1>
+            <button class="btn-info-top" onclick="openModal('aboutModal')">Узнать о проекте</button>
+        </header>
+
+        <section class="products-section">
+            <h2 class="section-title">ПРОДУКТЫ</h2>
+            
+            <h3 class="category-label">КЛУБНИКА</h3>
+            <div class="product-card">
+                <img src="club.jpg" class="prod-img">
+                <button class="btn-buy" onclick="openForm('Клубника 8 кг', '16 000 ₸')">Клубника 8 кг — 16 000 ₸</button>
+                <button class="btn-buy" onclick="openForm('Клубника 12 кг', '24 000 ₸')">Клубника 12 кг — 24 000 ₸</button>
+                <button class="btn-buy" onclick="openForm('Клубника 16 кг', '32 000 ₸')">Клубника 16 кг — 32 000 ₸</button>
+            </div>
+
+            <h3 class="category-label">МАЛИНА</h3>
+            <div class="product-card">
+                <img src="rasp.jpg" class="prod-img">
+                <button class="btn-buy" onclick="openForm('Малина 4 кг', '4 000 ₸')">Малина 4 кг — 4 000 ₸</button>
+                <button class="btn-buy" onclick="openForm('Малина 8 кг', '8 000 ₸')">Малина 8 кг — 8 000 ₸</button>
+                <button class="btn-buy" onclick="openForm('Малина 12 кг', '12 000 ₸')">Малина 12 кг — 12 000 ₸</button>
+            </div>
+        </section>
+
+        <button class="btn-faq-trigger" onclick="openModal('faqModal')">ВОПРОС-ОТВЕТ</button>
+
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+                <div class="scroll-area">
+                    <h2>О ПРОЕКТЕ</h2>
+                    <p>JazBerry – это первый проект в Казахстане, предлагающий своим клиентам свежие ягоды по подписке. Оформите подписку в 3 шага и радуйте себя и свою семью свежей ягодой все лето!</p>
+                    <p>Наш проект существует уже 3 года и за это время мы доставили в общей сложности ___ кг урожая нашим клиентам.</p>
+                    <h3>КАК ЭТО РАБОТАЕТ?</h3>
+                    <p>Вы выбираете ягоду и нужный Вам слот (8 кг или 12 кг), оплачиваете и получаете на почту именной сертификат, подтверждающий Вашу покупку. Все остальное мы берем на себя: ухаживаем и заботимся о растениях, поливаем, удобряем и принимаем все необходимые меры, чтобы Ваши кусты принесли отличный урожай. Как только Ваш урожай созреет – мы соберем его, бережно упакуем и доставим по адресу в городе Алматы, который Вы укажете. Да, доставка бесплатно!</p>
+                    <h3>ПОЧЕМУ ЭТО ВЫГОДНО И УДОБНО?</h3>
+                    <p>Мы отлично знаем свою работу. Наша компания профессионально занимается выращиванием высококачественных саженцев и свежей ягоды. У нас в арсенале собственные тепличные площади, несколько десятков ГА полей, биотехнологическая лаборатория и опытная команда с агрономом. Наши производственные мощности позволяют нам выращивать посадочный материал с нуля – мы можем тиражировать любой объем саженцев в своей лаборатории, укоренять и размножать их в теплицах и адаптировать в питомнике. Наш посадочный материал – без ложной скромности, один из лучших на рынке!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="faqModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('faqModal')">&times;</span>
+                <div class="scroll-area">
+                    <h2>ВОПРОС-ОТВЕТ</h2>
+                    <div class="faq-item"><p class="faq-q">Где конкретно находятся кусты?</p><p class="faq-a">Наш участок расположен в Карасайском районе Алматинской области, рядом с селом Бекболат.</p></div>
+                    <div class="faq-item"><p class="faq-q">Кто будет следить за моими кустами?</p><p class="faq-a">Уход за плантациями полностью лежит на нашей команде во главе с опытным агрономом.</p></div>
+                    <div class="faq-item"><p class="faq-q">Что если урожай погибнет?</p><p class="faq-a">В проекте JazBerry участвует всего 20% плантаций. Мы выполним обязательства или вернем деньги.</p></div>
+                    <div class="faq-item"><p class="faq-q">Можно ли приехать с детьми?</p><p class="faq-a">Да, по согласованию времени посещения.</p></div>
+                    <div class="faq-item"><p class="faq-q">Когда я получу свой урожай?</p><p class="faq-a">Урожай созревает волнами с июня-июля до заморозков. Мы уведомим вас.</p></div>
+                    <div class="faq-item"><p class="faq-q">Как происходит доставка урожая?</p><p class="faq-a">Бесплатно по Алматы. Курьеры свяжутся заранее.</p></div>
+                    <div class="faq-item"><p class="faq-q">Можно ли приехать и увидеть кусты?</p><p class="faq-a">Да, приветствуем визиты по предварительной договоренности.</p></div>
+                    <div class="faq-item"><p class="faq-q">Могу ли я сам собрать урожай?</p><p class="faq-a">Обсуждается индивидуально, обычно мы собираем сами.</p></div>
+                    <div class="faq-item"><p class="faq-q">Какие сорта клубники вы используете?</p><p class="faq-a">Проверенные ремонтантные сорта, дающие сладкую ягоду весь сезон.</p></div>
+                    <div class="faq-item"><p class="faq-q">Откуда вы берете саженцы?</p><p class="faq-a">Собственная лаборатория и питомник.</p></div>
+                    <div class="faq-item"><p class="faq-q">Можно ли купить несколько слотов сразу?</p><p class="faq-a">Да, любое количество.</p></div>
+                    <div class="faq-item"><p class="faq-q">Можно ли приобрести слот в подарок?</p><p class="faq-a">Да! Укажите ФИО и телефон получателя при оформлении.</p></div>
+                    <div class="faq-item"><p class="faq-q">Как я буду знать, что урожай готов?</p><p class="faq-a">Отчеты в соцсетях и личный звонок менеджера.</p></div>
+                    <div class="faq-item"><p class="faq-q">Можно ли изменить адрес доставки?</p><p class="faq-a">Да, за 24 часа до доставки.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="orderFormModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('orderFormModal')">&times;</span>
+                <h2 id="formTitle">Заявка</h2>
+                <div class="input-field">
+                    <label>Имя и фамилия получателя</label>
+                    <input type="text" id="name" placeholder="Иван Иванов">
+                    <small>Ваши или того, кому Вы хотите подарить сертификат</small>
+                </div>
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="example@mail.com">
+                    <small>(на него отправим электронный сертификат)</small>
+                </div>
+                <div class="input-field">
+                    <label>Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 (___) ___ __ __">
+                    <small>(будем звонить перед доставкой)</small>
+                </div>
+                <button class="btn-send" onclick="submitOrder()">ОПЛАТИТЬ</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="legal">
+                <a href="#" onclick="alert('Текст оферты будет тут')">Договор оферты</a> | 
+                <a href="#" onclick="alert('Текст политики будет тут')">Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
