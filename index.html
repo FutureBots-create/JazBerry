@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JazBerry</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Jazberry</h1>
+    <div class="logo-container">
+        <img src="club.jpg" class="logo-circle">
+    </div>
+    <button class="btn-secondary" id="btn-about">УЗНАТЬ О ПРОЕКТЕ</button>
+  </header>
+
+  <section class="block">
+    <h2 class="section-title">ПРОДУКТЫ</h2>
+    
+    <div class="product-group">
+        <h3>Клубника</h3>
+        <img src="club.jpg" class="product-main-img">
+        <div class="price-row">
+            <button class="btn-buy product-btn" data-product="Клубника 8 кг" data-price="16000">Купить 8 кг <br> 16.000 т</button>
+            <button class="btn-buy product-btn" data-product="Клубника 12 кг" data-price="24000">Купить 12 кг <br> 24.000 т</button>
+            <button class="btn-buy product-btn" data-product="Клубника 16 кг" data-price="32000">Купить 16 кг <br> 32.000 т</button>
+        </div>
+    </div>
+
+    <div class="product-group">
+        <h3>Малина</h3>
+        <img src="rasp.jpg" class="product-main-img">
+        <div class="price-row">
+            <button class="btn-buy product-btn" data-product="Малина 4 кг" data-price="4000">Купить 4 кг <br> 4.000 т</button>
+            <button class="btn-buy product-btn" data-product="Малина 8 кг" data-price="8000">Купить 8 кг <br> 8.000 т</button>
+            <button class="btn-buy product-btn" data-product="Малина 12 кг" data-price="12000">Купить 12 кг <br> 12.000 т</button>
+        </div>
+    </div>
+  </section>
+
+  <section class="block faq-section">
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-container">
+        <details><summary>Где находятся клубничные кусты?</summary><p>Наш участок в Карасайском районе Алматинской области, с. Бекболат.</p></details>
+        <details><summary>Кто следит за кустами?</summary><p>Команда фермы во главе с агрономом.</p></details>
+        </div>
+
+    <div class="legal-docs">
+        <a href="oferta.pdf" class="btn-legal">Договор оферты</a>
+        <a href="privacy.pdf" class="btn-legal">Политика конфиденциальности</a>
+    </div>
+  </section>
+
+  <div class="modal" id="modal-about">
+    <div class="modal-body scrollable">
+      <button class="close" id="close-about">✕</button>
+      <h2 class="modal-title">О ПРОЕКТЕ</h2>
+      <div class="about-content">
+          <p><strong>JazBerry</strong> – первый проект в Казахстане по подписке на ягоды.</p>
+          <details class="about-details" open><summary>КАК ЭТО РАБОТАЕТ?</summary>
+            <p>Выбираете слот, оплачиваете, получаете сертификат. Мы ухаживаем и доставляем бесплатно по Алматы!</p>
+          </details>
+          <details class="about-details"><summary>ПОЧЕМУ ЭТО ВЫГОДНО?</summary>
+            <p>Цена 2000 тг/кг — это на 30-50% дешевле, чем в сезон в магазинах.</p>
+          </details>
+      </div>
+      <button class="btn-buy" id="close-about-2">ЗАКРЫТЬ</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-order">
+    <div class="modal-body scrollable">
+      <button class="close" id="close-order">✕</button>
+      <h3 id="order-title">Заявка</h3>
+      <div class="form-group">
+          <label>Имя и фамилия получателя (Ваши или для подарка)</label>
+          <input id="full-name" placeholder="Иван Иванов">
+          <label>Email (для сертификата)</label>
+          <input id="email" type="email" placeholder="example@mail.com">
+          <label>Телефон (для уточнения адреса)</label>
+          <input id="phone" type="tel" placeholder="+7 707 ...">
+      </div>
+      <button class="btn-buy" id="send">ПЕРЕЙТИ К ОПЛАТЕ</button>
+    </div>
+  </div>
+</body>
+</html>
